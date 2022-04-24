@@ -1,6 +1,6 @@
 [package]
 authors = ["Hidekazu Kobayashi <kobahide789@gmail.com>"]
-name = "rusty-keys"
+name = "rusty-keys-hello"
 edition = "2021"
 version = "0.1.0"
 
