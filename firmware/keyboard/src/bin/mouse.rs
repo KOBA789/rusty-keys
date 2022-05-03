@@ -19,10 +19,9 @@ use usbd::{
 };
 
 use usbd_hid::{
-    descriptor::{SerializedDescriptor, MouseReport},
+    descriptor::{MouseReport, SerializedDescriptor},
     hid_class::{
-        HIDClass, HidClassSettings, HidCountryCode, HidProtocol, HidSubClass,
-        ProtocolModeConfig,
+        HIDClass, HidClassSettings, HidCountryCode, HidProtocol, HidSubClass, ProtocolModeConfig,
     },
 };
 
@@ -74,7 +73,7 @@ fn main() -> ! {
             locale: HidCountryCode::NotSupported,
         },
     );
-    
+
     let mut dev = UsbDeviceBuilder::new(&bus_allocator, vid_pid)
         .manufacturer("KOBA789")
         .product("RustyKeys")
